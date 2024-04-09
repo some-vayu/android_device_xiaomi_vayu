@@ -197,7 +197,7 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     group system
     disabled
 
-on charger
+on property:init.svc.vendor.charger=running
     mkdir /mnt/vendor/persist
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
