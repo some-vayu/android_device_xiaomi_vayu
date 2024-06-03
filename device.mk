@@ -130,6 +130,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
    libstdc++.vendor
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
