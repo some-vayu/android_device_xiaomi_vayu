@@ -14,9 +14,3 @@
 
 soong_namespace {
 }
-
-kernel_headers {
-    name: "generated_kernel_headers",
-    vendor_available: true,
-    recovery_available: true,
-}
