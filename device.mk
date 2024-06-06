@@ -203,17 +203,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
 
 # GPS
-PRODUCT_PACKAGES += \
-     android.hardware.gnss@2.1-impl-qti \
-     android.hardware.gnss@2.1-service-qti
-
-PRODUCT_PACKAGES += \
-     liblocation_api \
-     libgps.utils \
-     libbatching \
-     libgeofencing \
-     libloc_core \
-     libgnss
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/apdr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/apdr.conf \
@@ -374,6 +363,7 @@ TARGET_BOARD_PLATFORM := msmnile
 TARGET_COMMON_QTI_COMPONENTS := \
     charging \
     display \
+    gps \
     telephony \
     perf
 
