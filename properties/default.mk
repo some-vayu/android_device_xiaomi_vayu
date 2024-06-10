@@ -16,15 +16,13 @@
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     debug.sf.frame_rate_multiple_threshold=120 \
+    debug.sf.treat_170m_as_sRGB=1 \
+    debug.sf.predict_hwc_composition_strategy=0 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
-    ro.surface_flinger.set_idle_timer_ms=80 \
-    ro.surface_flinger.set_touch_timer_ms=200 \
+    ro.surface_flinger.set_idle_timer_ms=500 \
+    ro.surface_flinger.set_touch_timer_ms=500 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true \
-    vendor.display.disable_idle_time_hdr=1 \
-    vendor.display.disable_idle_time_video=1 \
-    vendor.display.disable_metadata_dynamic_fps=1 \
-    vendor.display.idle_time=1100 \
-
+    vendor.display.qdcm.mode_combine=1 
 
 # Enable app/sf phase offset as durations. The numbers below are translated from the existing
 # positive offsets by finding the duration app/sf will have with the offsets.
